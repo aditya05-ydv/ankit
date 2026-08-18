@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  /* TSEC Brand Colors */
+  --color-ink: #081C13;
+  --color-forest: #0D3323;
+  --color-forest-light: #124A31;
+  --color-brand-green: #2FBF5F;
+  --color-brand-green-dark: #1E8F45;
+  --color-signal-yellow: #D9E14A;
+  --color-cream: #F3F7F2;
+  --color-muted: #C9D6CD;
+
+  /* Fonts */
+  --font-display: "Big Shoulders Display", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-ink);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleX {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out both;
+}
+
+.animate-scale-x {
+  animation: scaleX 0.6s ease-out both;
+  transform-origin: left;
+}
+
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.6s; }
+.delay-5 { animation-delay: 0.75s; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
