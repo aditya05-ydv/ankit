@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mail, Phone, MapPin } from 'lucide-react'
-import logo from '../assets/logo_this.png'
+import logo from '../assets/logo-svg.svg'
 
 function Footer() {
   return (

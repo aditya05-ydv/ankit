@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Menu, X, ChevronDown } from 'lucide-react'
-import logo from '../assets/logo_this.png'
+import logo from '../assets/logo-svg.svg'
 
 const navLinks = [
   { name: 'Home', path: '/' },
